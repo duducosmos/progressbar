@@ -10,7 +10,7 @@ __versio__ = "0.1"
 import os
 
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 def read(fname):
@@ -23,6 +23,7 @@ setup(
     author_email="pereira.somoza@gmail.com",
     description=("Simple progress bar"),
     license = "GNU v3",
+    packages= find_packages(),
     keywords = "progress bar",
     url = "https://github.com/duducosmos/progressbar",
     long_description=read('README'),
